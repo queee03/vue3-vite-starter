@@ -1,9 +1,5 @@
 <template>
-  <main class="main">hello hello</main>
+  <main class="text-3xl font-bold underline">hello hello</main>
 </template>
 
-<style lang="scss">
-.main {
-  color: Red;
-}
-</style>
+<style lang="scss"></style>
