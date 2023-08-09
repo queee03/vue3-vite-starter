@@ -1,5 +1,6 @@
 <template>
-  <div class="greetings">Hello</div>
+  <div>about</div>
+  <RouterLink to="/home">home</RouterLink>
 </template>
 
 <script setup lang="ts"></script>

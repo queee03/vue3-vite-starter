@@ -13,8 +13,9 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "pre:dev": "npm run clean:auto-imports",
-    "clean:auto-imports": "rimraf auto-imports.d.ts"
+    "pre:dev": "npm run clean:auto-imports && npm run clean:auto-components",
+    "clean:auto-imports": "rimraf auto-imports.d.ts",
+    "clean:auto-components": "rimraf components.d.ts"
   },
   "packageManager": "pnpm@8.6.10",
   "dependencies": {
@@ -50,6 +51,7 @@
     "tailwindcss": "^3.3.3",
     "typescript": "~5.1.6",
     "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.1",
     "vite": "^4.4.6",
     "vite-plugin-pages": "^0.31.0",
     "vitest": "^0.33.0",
