@@ -10,7 +10,10 @@
   "compilerOptions": {
     "composite": true,
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    /*  由 init-vite 初始化后定义的 moduleResolution = "bundler"，
+    该模式与 vite-plugin-vue-layouts@0.8.0 不兼容，
+    所以在参考该插件官方 exmple 之后将 moduleResolution 改为 "node" */
+    "moduleResolution": "Node",
     "types": ["node"]
   }
 }

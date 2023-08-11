@@ -8,6 +8,8 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    /* 在 env.d.ts 中引入 vite-plugin-vue-layouts/client.d.ts 生效了，
+    在 compilerOptions.types 中配置却不行，为什么 */
     "types": ["unplugin-icons/types/vue"]
   }
 }
