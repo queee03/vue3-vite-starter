@@ -1,3 +1,11 @@
+<route lang="json">
+{
+  "meta": {
+    "layout": "personal"
+  }
+}
+</route>
+
 <template>
   <div>about</div>
   <RouterLink to="/home">home</RouterLink>

@@ -1,3 +1,11 @@
+<route lang="json">
+{
+  "meta": {
+    "layout": "default"
+  }
+}
+</route>
+
 <template>
   <IconMdiAccount />
   <RouterLink to="/about">about</RouterLink>

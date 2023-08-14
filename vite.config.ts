@@ -15,7 +15,10 @@ export default defineConfig({
     vue(),
     vueJsx(),
     Pages(),
-    Layouts(),
+    Layouts({
+      layoutsDirs: 'src/layouts',
+      defaultLayout: 'default'
+    }),
     AutoImport({
       // targets to transform
       include: [
