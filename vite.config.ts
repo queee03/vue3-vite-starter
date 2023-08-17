@@ -8,11 +8,18 @@ import Components from 'unplugin-vue-components/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import { defineConfig } from 'vite'
 import Pages from 'vite-plugin-pages'
+import { VitePWA } from 'vite-plugin-pwa'
 import Layouts from 'vite-plugin-vue-layouts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    VitePWA({
+      registerType: 'autoUpdate'
+      // devOptions: {
+      //   enabled: true
+      // }
+    }),
     // Vue(),
     // VueJsx(),
     VueMacros({
