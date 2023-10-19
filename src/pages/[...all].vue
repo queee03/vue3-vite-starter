@@ -1,5 +1,13 @@
+<route lang="json">
+{
+  "meta": {
+    "layout": "404"
+  }
+}
+</route>
+
 <template>
-  <div>404</div>
+  <div>What happened?</div>
 </template>
 
 <script setup lang="ts"></script>

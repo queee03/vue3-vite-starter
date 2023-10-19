@@ -9,10 +9,9 @@
 <template>
   <IconMdiAccount />
   <RouterLink to="/about">about</RouterLink>
-  <main class="text-3xl font-bold underline">{{ msg }},{{ count }}</main>
-  <HelloWorld></HelloWorld>
-  <UserHelloUser></UserHelloUser>
-  <Child @click-count="handleClick"></Child>
+  <main class="text-3xl font-bold underline cursor-pointer" @click="handleClick(1)">
+    {{ msg }},{{ count }}
+  </main>
 </template>
 
 <script setup lang="ts">
