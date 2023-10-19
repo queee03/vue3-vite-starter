@@ -7,6 +7,7 @@ import Icons from 'unplugin-icons/vite'
 import Components from 'unplugin-vue-components/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import { defineConfig } from 'vite'
+import { viteMockServe } from 'vite-plugin-mock'
 import Pages from 'vite-plugin-pages'
 import { VitePWA } from 'vite-plugin-pwa'
 import Layouts from 'vite-plugin-vue-layouts'
@@ -15,7 +16,7 @@ import Layouts from 'vite-plugin-vue-layouts'
 export default defineConfig({
   plugins: [
     VitePWA({
-      registerType: 'autoUpdate'
+      registerType: 'autoUpdate' // default?
       // devOptions: {
       //   enabled: true
       // }
@@ -62,6 +63,10 @@ export default defineConfig({
     }),
     Icons({
       compiler: 'vue3'
+    }),
+    viteMockServe({
+      mockPath: 'mock',
+      enable: true
     })
   ],
   resolve: {
